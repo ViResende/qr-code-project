@@ -55,11 +55,18 @@ body {
   padding: 2rem 0;
   margin: 2rem auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* ← this is the secret! */
+  grid-template-columns: repeat(3, 1fr); /* ← back to fixed 3 columns */
   max-width: 960px;
   gap: 2rem;
   justify-items: center;
   justify-content: center;
+}
+
+
+@media (max-width: 1000px) {
+  .card-grid {
+    grid-template-columns: 1fr; /* ← 1 column in mobile */
+  }
 }
 
 
