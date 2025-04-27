@@ -67,6 +67,11 @@ body {
   }
 }
 
+.card-grid > li:nth-child(3n+1):last-child {
+  grid-column: 1 / -1;
+  justify-self: center;
+}
+
 
 
 
